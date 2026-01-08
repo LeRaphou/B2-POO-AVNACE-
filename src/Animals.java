@@ -22,5 +22,12 @@ public class Animals {
         return sound;
     }
 
+    public static void commonRule() {
+        System.out.println("Règle : tous les animaux respirent et se nourrissent.");
+    }
+
+    public void makeSound() {
+        System.out.println(name + " fait : " + sound);
+    }
 
 }
