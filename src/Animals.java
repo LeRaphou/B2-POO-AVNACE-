@@ -30,4 +30,8 @@ public class Animals {
         System.out.println(name + " fait : " + sound);
     }
 
+    public void eat(){
+        System.out.println(name+" mange");
+    }
+
 }
