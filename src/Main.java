@@ -1,5 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 void main() {
     Animals.commonRule();
+
 
 
 
@@ -21,4 +25,24 @@ void main() {
     dog.eat();
     dog.eat(" un boeuf bourgignon");
 
+    Pet pet1 = new Dog(3, "Rex", "Woof");
+    pet1.play();
+    Pet pet2 = new Cow(5, "Marguerite" , "Meuh");
+    pet2.play();
+
+    List<Animals> animals = new ArrayList<>();
+    animals.add(new Dog(2, "SoSoManess", "Woof"));
+    animals.add(new Dog(2, "WaRenoi", "Woof"));
+    animals.add(new Cow(2, "KYKY2Bondy", "meuh"));
+    animals.add(new Cow(2, "Jérome", "meuh"));
+
+    System.out.println("\n=== Parcours de la liste d'Animals ===");
+    for (Animals animal : animals) {
+        animal.makeSound();
+        animal.eat();
+
+        if (animal instanceof Pet) {
+            ((Pet) animal).play();
+        }
+    }
 }
