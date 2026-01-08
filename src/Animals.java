@@ -10,15 +10,15 @@ public class Animals {
     }
 
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public String getSound() {
+    protected String getSound() {
         return sound;
     }
 
