@@ -6,4 +6,8 @@ public class Dog extends Animals{
     public void eat(){
         System.out.println(getName() + " Mange de la viande et des croquettes");
     }
+
+    public void eat(String food){
+        System.out.println(getName() + " Mange ces croquette mais prefère :" + food);
+    }
 }

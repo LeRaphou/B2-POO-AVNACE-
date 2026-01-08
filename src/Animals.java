@@ -34,4 +34,9 @@ public class Animals {
         System.out.println(name+" mange");
     }
 
+
+    public void eat(String food){
+        System.out.println(name+" mange" + food);
+    }
+
 }
